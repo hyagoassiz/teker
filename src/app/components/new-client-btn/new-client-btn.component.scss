@@ -1,0 +1,21 @@
+.new-container{
+    padding: 20px;
+    align-items: center;
+    display: flex;
+  
+}
+.icon-add {
+    height: 25px;
+}
+
+.text-add{
+    margin-left: 4px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer; 
+}
+
+.text-add:hover{
+    opacity: 80%;
+}

@@ -1,0 +1,79 @@
+<div class="form-container">
+    <img src="/assets/images/close.png" alt="Fechar" (click)="fecharFormulario()">
+    <form (ngSubmit)="submit()" [formGroup]="clientForm" #formDir="ngForm" class="form">
+        <div class="container-section">
+            <span class="title-section-form">Dados Pessoais</span><br><br>
+            <label class="label-first" for="nomeCompleto">Nome Completo</label>
+            <input
+                type="text"
+                placeholder="Nome completo"
+                formControlName="name"
+            >
+            <div *ngIf="name.invalid && formDir.submitted">
+                <p class="message-error" *ngIf="name.errors?.['required']">O nome é obrigatório</p>
+            </div>
+        
+            <label class="label-first labelS" for="cpf">CPF (somente números)</label>
+            <input
+                type="text"
+                formControlName="cpf"
+                placeholder="CPF"
+                pattern="[0-9]*"
+                minlength="11"
+                maxlength="11"
+            >
+            <div *ngIf="cpf.invalid && formDir.submitted">
+                <p class="message-error" *ngIf="cpf.errors?.['required']">O CPF é obrigatório</p>
+                <p class="message-error" *ngIf="cpf.errors?.['pattern']">Digite apenas números</p>
+                <p class="message-error" *ngIf="cpf.errors?.['minlength']">O CPF deve ter 11 dígitos</p>
+                <p class="message-error" *ngIf="cpf.errors?.['maxlength']">O CPF deve ter 11 dígitos</p>
+            </div>
+        
+            <label class="label-first labelS" for="dataNascimento">Data de Nascimento</label>
+            <input
+                type="date"
+                formControlName="date"
+            >
+            <div *ngIf="phone.invalid && formDir.submitted">
+                <p class="message-error" *ngIf="phone.errors?.['required']">A data de nascimento é obrigatória</p>
+            </div>
+
+        </div>
+        
+        <div class="container-section">
+            <span class="title-section-form">Contato</span><br><br>
+
+            <label class="label-first" for="telefone">Telefone Celular (somente números)</label>
+            <input
+                type="tel" 
+                placeholder="Telefone" 
+                formControlName="phone"
+                pattern="[0-9]*"
+                minlength="10"
+                maxlength="11"
+            >
+            <div *ngIf="phone.invalid && formDir.submitted">
+                <p class="message-error" *ngIf="phone.errors?.['required']">O telefone é obrigatório</p>
+                <p class="message-error" *ngIf="phone.errors?.['pattern']">Digite apenas números</p>
+                <p class="message-error" *ngIf="phone.errors?.['minlength']">O telefone deve ter no mínimo 10 dígitos</p>
+                <p class="message-error" *ngIf="phone.errors?.['maxlength']">O telefone deve ter no máximo 11 dígitos</p>
+            </div>
+            
+            <label class="label-first labelS" for="email">E-mail</label>
+            <input
+                type="email"
+                placeholder="E-mail"
+                formControlName="email"
+            >
+            <div *ngIf="phone.invalid && formDir.submitted">
+                <p class="message-error" *ngIf="phone.errors?.['required']">O e-mail é obrigatório</p>
+            </div>
+        </div> 
+
+        <br>
+        <div class="button-container">
+            <app-button></app-button>
+        </div>
+
+    </form>
+</div>

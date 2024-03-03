@@ -1,0 +1,51 @@
+<app-search (searchChange)="filterClients($event)"></app-search>
+
+<div class="overlay" *ngIf="selectedCliente"></div> 
+
+<div class="client-detail-container" *ngIf="selectedCliente">
+  <div class="client-detail">
+    <h2 class="client-name">{{ selectedCliente.name }}</h2><br>
+    <div class="client-info">
+      <span class="info-label">Cadastrado em:</span>
+      <span class="info-value">{{ selectedCliente.registrationDate | date: 'dd/MM/yyyy' }}</span>
+    </div>
+    <div class="client-info">
+      <span class="info-label">CPF:</span>
+      <span class="info-value">{{ formatarCPF(selectedCliente.cpf) }}</span>
+    </div>
+    <div class="client-info">
+      <span class="info-label">Data de Nascimento:</span>
+      <span class="info-value">{{ selectedCliente.date | date: 'dd/MM/yyyy' }}</span>
+    </div>
+    <div class="client-info">
+      <span class="info-label">Telefone:</span>
+      <span class="info-value">{{ selectedCliente.phone }}</span>
+    </div>
+    <div class="client-info">
+      <span class="info-label">Email:</span>
+      <span class="info-value">{{ selectedCliente.email }}</span>
+    </div>
+    <img class="close-client-detail" src="assets/images/close.png" alt="" (click)="closeClienteDetail()">
+  </div>
+</div>
+
+<span class="title-table">Clientes Cadastrados</span>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Cadastrado em</th>
+        <th>Nome</th>
+        <th>CPF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of filteredClientes" (click)="fetchClienteById(cliente.id)">
+        <td>{{ cliente.registrationDate | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ cliente.name }}</td>
+        <td>{{ formatarCPF(cliente.cpf) }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,148 @@
+{
+  "clientes": [
+    {
+      "name": "Carlos da Silva",
+      "cpf": "12345678901",
+      "date": "1985-07-15",
+      "phone": "11987654321",
+      "email": "carlos.silva@gmail.com",
+      "registrationDate": "2022-12-31 10:30:00",
+      "id": 1
+    },
+    {
+      "name": "Ana Souza",
+      "cpf": "98765432109",
+      "date": "1990-03-25",
+      "phone": "11901234567",
+      "email": "ana.souza@hotmail.com",
+      "registrationDate": "2023-01-01 09:45:00",
+      "id": 2
+    },
+    {
+      "name": "Fernanda Oliveira",
+      "cpf": "45678901234",
+      "date": "1988-11-05",
+      "phone": "11987650987",
+      "email": "fernanda.oliveira@yahoo.com",
+      "registrationDate": "2023-02-01 14:15:00",
+      "id": 3
+    },
+    {
+      "name": "José da Silva",
+      "cpf": "65432109876",
+      "date": "1975-06-20",
+      "phone": "11901234567",
+      "email": "jose.silva@gmail.com",
+      "registrationDate": "2023-02-15 11:20:00",
+      "id": 4
+    },
+    {
+      "name": "Mariana Santos",
+      "cpf": "98765432101",
+      "date": "1995-09-10",
+      "phone": "11987650987",
+      "email": "mariana.santos@yahoo.com",
+      "registrationDate": "2023-03-01 08:30:00",
+      "id": 5
+    },
+    {
+      "name": "Rafaela Costa",
+      "cpf": "12345678901",
+      "date": "1982-04-18",
+      "phone": "11901234567",
+      "email": "rafaela.costa@gmail.com",
+      "registrationDate": "2023-03-10 15:40:00",
+      "id": 6
+    },
+    {
+      "name": "Lucas Oliveira",
+      "cpf": "65432109876",
+      "date": "1989-12-30",
+      "phone": "11987650987",
+      "email": "lucas.oliveira@hotmail.com",
+      "registrationDate": "2023-04-01 10:50:00",
+      "id": 7
+    },
+    {
+      "name": "Patrícia Lima",
+      "cpf": "98765432101",
+      "date": "1997-03-05",
+      "phone": "11901234567",
+      "email": "patricia.lima@yahoo.com",
+      "registrationDate": "2023-04-15 12:00:00",
+      "id": 8
+    },
+    {
+      "name": "André Souza",
+      "cpf": "12345678901",
+      "date": "1978-08-25",
+      "phone": "11987650987",
+      "email": "andre.souza@gmail.com",
+      "registrationDate": "2023-05-01 17:10:00",
+      "id": 9
+    },
+    {
+      "name": "Juliana Pereira",
+      "cpf": "65432109876",
+      "date": "1986-02-12",
+      "phone": "11901234567",
+      "email": "juliana.pereira@hotmail.com",
+      "registrationDate": "2023-05-15 14:20:00",
+      "id": 10
+    },
+    {
+      "name": "Hyago Assiz",
+      "cpf": "02126343219",
+      "date": "1992-05-18",
+      "phone": "41991964879",
+      "email": "hyago@gmail.com",
+      "registrationDate": "2024-02-26",
+      "id": 11
+    },
+    {
+      "name": "Tatiele",
+      "cpf": "00099900099",
+      "date": "1993-09-14",
+      "phone": "41996699665",
+      "email": "teste@teste.com",
+      "registrationDate": "2024-02-26",
+      "id": 12
+    },
+    {
+      "name": "HYAGO ASSIZ DE SOUZA",
+      "cpf": "02126343219",
+      "date": "1992-05-18",
+      "phone": "41991964879",
+      "email": "hyagoassiz@hotmail.com",
+      "registrationDate": "2024-02-26",
+      "id": 13
+    },
+    {
+      "name": "João da Silva",
+      "cpf": "09928393281",
+      "date": "1992-05-18",
+      "phone": "41991964879",
+      "email": "joao@gmail.com",
+      "registrationDate": "2024-02-26",
+      "id": 14
+    },
+    {
+      "name": "Paula Costa",
+      "cpf": "02126343219",
+      "date": "1992-05-15",
+      "phone": "4199664455",
+      "email": "paula@teste.com",
+      "registrationDate": "2024-02-26",
+      "id": 15
+    },
+    {
+      "name": "Teste de Assiz",
+      "cpf": "02126343219",
+      "date": "1992-05-18",
+      "phone": "4199889988",
+      "email": "teste@teste.com",
+      "registrationDate": "2024-02-27",
+      "id": 16
+    }
+  ]
+}

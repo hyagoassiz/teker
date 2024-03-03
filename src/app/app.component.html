@@ -1,0 +1,7 @@
+<app-header></app-header> 
+
+<app-new-client-btn (click)="abrirAppForm()"></app-new-client-btn>
+
+<app-form *ngIf="showAppForm" (fecharFormularioEvent)="fecharFormulario()"></app-form> 
+
+<app-table></app-table> 

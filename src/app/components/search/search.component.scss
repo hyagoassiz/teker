@@ -1,0 +1,40 @@
+
+.search-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    border: 1px solid #4589a039; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    height: 40px;
+    border-radius: 37px;
+    background-color: white;
+    display: flex;
+    padding-right: 20px;
+    align-items: center; 
+  
+  }
+  .input-search-container {
+      margin-bottom: 10px; 
+      background-color: transparent;
+      margin-bottom: 0;
+      flex: 1;
+      color: #4589A0;
+      font-size: 16px;
+      margin-left: 10px; 
+  
+      
+    }
+  
+  .input-search-container:focus{
+      outline: none; 
+      box-shadow: 0 0 3px transparent; 
+  }
+  
+  .icon-search{
+    height: 30px;
+    margin-left: 10px;
+  }
